@@ -67,6 +67,11 @@ In order to test above implemented pipelined processor I have written a test ben
 # Simulation and Results:
 Simulation is done using Vivado and the test code which have been used and it's simulation result as provided in Test_Code_and_Simulation_Result folder. Just to show some outputs in simulation I changed the test bench and main file a little bit but the uploaded files in source code sections are the original ones which will not show any output in simulation. The working is verified by below provided simulation result:
 
+![Simulation_Result](https://user-images.githubusercontent.com/93525537/140512946-72a85df9-854a-4a1f-b665-1d3d99e08931.png)
+
+# References:
+All this material and understanding is taken from book
+
 
 
 
