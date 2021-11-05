@@ -70,7 +70,7 @@ Simulation is done using Vivado and the test code which have been used and it's 
 ![Simulation_Result](https://user-images.githubusercontent.com/93525537/140512946-72a85df9-854a-4a1f-b665-1d3d99e08931.png)
 
 # References:
-All this material and understanding is taken from book
+All this material and understanding is taken from book " Digital Design and Computer Architecture RISC-V Edition " by Sarah L Harris and David M Harris.
 
 
 
