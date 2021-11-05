@@ -65,7 +65,8 @@ This module is simply a top level module where I'm calling all above mentioned m
 In order to test above implemented pipelined processor I have written a test bench which is available in the test bench folder. Just for simplicity I have not declared any output in that test bench because I have access to check the inputs and outputs of all modules through scope option (Available in vivado simulation). But if you want to declare some outputs in that test bench you can simply declare that varible as output and similarly declare that variable as output in main.v file and remove it from below where it has been declare as wire.
 
 # Simulation and Results:
-Simulation is done using Vivado and the test code which have been used and it's simulation result as provided in 
+Simulation is done using Vivado and the test code which have been used and it's simulation result as provided in Test_Code_and_Simulation_Result folder. Just to show some outputs in simulation I changed the test bench and main file a little bit but the uploaded files in source code sections are the original ones which will not show any output in simulation. The working is verified by below provided simulation result:
+
 
 
 
