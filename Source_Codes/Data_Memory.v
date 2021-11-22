@@ -11,7 +11,6 @@ module Data_Memory (
     always @(*) begin
         //ReadData <= {Data_Mem[A],Data_Mem[A+1],Data_Mem[A+2],Data_Mem[A+3]};
         ReadData <= Data_Mem[ALUResultM];
-        Data_Mem[0] <= 32'd10;
     end
     always @(posedge clk) begin
         if (rst) begin
