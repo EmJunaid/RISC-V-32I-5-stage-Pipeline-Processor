@@ -8,7 +8,8 @@ module Instruction_Memory (
     reg [31:0] instructions_Value [255:0];  //maximum 256 instruction can be here
 
     initial begin
-        $readmemh("instruction.mem", instructions_Value);
+        //prefer absolute paths in simulators
+        $readmemh("H://Semester 7//CA//Lab//Lab8//docs//git_5_stage_sim//RISC-V-32I-5-stage-Pipeline-Processor//Source_Codes//instruction.mem", instructions_Value);
     end
 
     always @ (*) begin
