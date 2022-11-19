@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 
 module pipeline_tb ();
-    reg clk,
+    reg clk;
     reg rst;
 
     main i_riscv (

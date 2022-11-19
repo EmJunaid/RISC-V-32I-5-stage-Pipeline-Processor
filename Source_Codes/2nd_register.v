@@ -20,7 +20,7 @@ module Second_register (
     input             ZeroE,
     input             FlushE,
     input [1:0]       ResultSrcD,
-    input [3:0]       ALUControlD,
+    input [4:0]       ALUControlD,
     output reg        RegWriteE,
     output reg        MemWriteE,
     output reg        JumpE,

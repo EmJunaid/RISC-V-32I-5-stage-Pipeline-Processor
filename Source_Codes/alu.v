@@ -46,11 +46,13 @@ module alu(
 );
 
     reg  [31:0]  ALU_Result;
-    wire [32:0]  tmp;
+    reg  [32:0]  tmp;
 
-    assign ALUResult = ALU_Result;              // ALU out
-    assign tmp       = {1'b0, SrcAE} + {1'b0, SrcBE};
-    assign CarryOut  = tmp[32];                  // Carryout flag
+    always @ (*) begin
+        tmp       = {1'b0, SrcAE} + {1'b0, SrcBE};
+        CarryOut  = tmp[32];
+    end
+
 
 	always @ (*) //combinational block so blocking (=) assignment should be used
 	begin
