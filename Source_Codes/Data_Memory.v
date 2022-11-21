@@ -13,7 +13,7 @@ module Data_Memory (
     reg [31:0] Data_Mem [255:0];   //2D array for data memory
     integer i;
 
-    always @(*) begin
+    always @(*) begin                     //asynchronous read from Data Memory
         ReadData = Data_Mem[ALUResultM];
     end
 
@@ -22,7 +22,7 @@ module Data_Memory (
             for(i = 0; i < 255;i = i + 1) begin
                 Data_Mem[i] <= 32'd0;
             end
-        end else if (MemWriteM && |ALUResultM) begin   //|ALUResultM is to avoid writing at x0
+        end else if (MemWriteM) begin
             Data_Mem[ALUResultM] <= WriteDataM; 
         end
     end    
