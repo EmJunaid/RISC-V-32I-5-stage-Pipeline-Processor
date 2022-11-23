@@ -1,18 +1,21 @@
-`timescale 1ns/1ns
+`timescale 1ns/1ps
+
 module pipeline_tb ();
-    reg clk,rst;
-    main zzz (clk,rst);
+    reg clk;
+    reg rst;
 
-        initial clk=0;
-        always #5 clk=~clk;
-
-        initial begin
-            rst = 1;
-
-            #20
-
-            rst = 0;
-        end
-
+    main i_riscv (
+        .clk(clk),
+        .rst(rst)
+    );
     
+    initial clk=0;
+    always #5 clk=~clk;
+
+    initial begin
+        rst = 1;
+        #20
+        rst = 0;
+    end
+ 
 endmodule
