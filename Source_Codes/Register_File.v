@@ -45,7 +45,7 @@ module Register_File (
                 Registers[i] <= 32'd0;
             end
 
-        end else if (RegWriteW) begin
+        end else if (RegWriteW && (|RdW)) begin    //|RdW, avoid writing at x0
             Registers[RdW] <= ResultW;
         end
     end
