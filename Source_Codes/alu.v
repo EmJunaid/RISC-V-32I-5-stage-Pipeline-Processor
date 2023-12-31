@@ -90,5 +90,9 @@ module alu(
         default:  ALU_Result =   SrcAE + SrcBE ;
         endcase
     end
+	 
+	 always @(*) begin
+	     ALUResult = ALU_Result;
+	 end
     
 endmodule
